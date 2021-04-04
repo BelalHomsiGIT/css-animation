@@ -1,0 +1,61 @@
+.parent{
+    display: flex;
+    border-bottom: 1px solid black;
+    height: 320px;
+    margin-bottom: 10px;
+}
+.text{
+    width: 40%;
+    border-right: 1px solid black;
+}
+.element{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid blue;    
+}
+.element1{
+    animation-name: anim1;
+    animation-duration: 5s;
+}
+@keyframes anim1 {
+    from { background-color: rgb(0, 255, 255);}
+    to { background-color: red;}
+}
+.element2{
+    animation-name: anim2;
+    animation-duration: 5s;
+}
+@keyframes anim2 {
+    0%   {background-color: rgb(0, 255, 255); }
+    20%  {background-color: rgb(5, 28, 71); }
+    40%  {background-color: rgb(107, 48, 48); }
+    70%  {background-color: rgb(145, 158, 29); }
+    100% {background-color: rgb(34, 31, 31); }
+}
+
+.element3{
+    position: relative;
+    animation-name: anim3;
+    animation-duration: 8s;
+}
+@keyframes anim3 {
+    0% {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.element4{
+    position: relative;
+    animation-name: anim4;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+@keyframes anim4 {
+    0% {background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:200px; top:0px;}
+50%  {background-color:blue; left:200px; top:200px;}
+75%  {background-color:green; left:0px; top:200px;}
+100% {background-color:red; left:0px; top:0px;}
+}
